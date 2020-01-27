@@ -54,7 +54,8 @@ addItemTOCartBtn.forEach(function(btn){
         const cart=document.getElementById("cart");
         const cartTotal=document.querySelector(".cart-total-container");
         cart.insertBefore(createCart,cartTotal);
-        alert("The item has been added in the cart");
+        //alert("The item has been added in the cart");
+	swal("The item has been added in the cart.View the cart for final items");
         showTotal();
 
 
