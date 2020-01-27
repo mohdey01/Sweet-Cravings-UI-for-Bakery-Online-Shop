@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css?family=Chilanka&display=swap');
+
+:root {
+  --mainPink: #ef7998;
+  --mainYellow: rgb(249, 228, 148);
+  --mainWhite: #fff;
+  --mainBlack: #000;
+  --yellowTrans: rgba(249, 228, 148, 0.5);
+  --mainGrey: rgb(238, 238, 238);
+}
+
+body {
+  font-family: 'Chilanka', cursive;
+  background: #fff;
+  color: #000;
+}
+/* btn used */
+ .btn-black{
+ 	border:0.1rem solid black;
+ 	color: black;
+ 	font-weight: bold;
+ }
+
+ .btn-blue{
+
+ 	border:0.1rem solid #7070b7;
+ 	color: #7070b7;
+ }
+.btn-black:hover{
+ 	background: #7070b7;
+ 	color: black;
+ }
+.btn-blue:hover{
+ 	background: black;
+ 	color:  #7070b7;
+ }
+
+
+
+.navbar-toggler{
+	outline: none !important;
+}
+
+#toggler-icon{
+	font-size: 2.5rem;
+	color: #7070b7;
+}
+
+.nav-link{
+	color:#7070b7;
+	font-weight: bold;
+
+}
+
+.nav-link:hover{
+	color:#000;
+}
+
+.cart-info__icon{
+	margin: auto;
+	color: #000;
+	padding-left: 0;
+	
+}
+
+.cart-info{
+	margin: auto;
+	border: 0.1rem solid black;
+	cursor: pointer;
+	padding: 0.5rem 0.5rem;
+	border-radius: 0.3rem;
+}
+
+.cart-info:hover{
+ border: 0.1rem solid #7070b7;	
+ background: #7070b7;
+ color: white;
+
+}
+
+.cart-info:hover .cart-info__icon{
+	color: #fff;
+}
+
+.max-height{
+	min-height: calc(100vh - 76px);
+	background: url("../img/cake_main.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	opacity: 0.7;
+
+}
+
+.banner{
+	color: black;
+	margin-top: 4rem;
+}
+
+.banner-title{
+	color: #7070b7;
+	
+
+}
+
+.banner-title:hover{
+	color:grey;
+	font-size: 3.5rem;
+}
+
+.banner-link{
+	color:black;
+	font-size: 1.5rem;
+	border:0.1rem solid black;
+	border-radius:0.2rem;
+
+}
+
+.banner-link:hover{
+	background: #7070b7;
+	color:white;
+	border:0.1rem solid #7070b7;
+
+	}
+
+/*  about section */
+.about-img__container{
+	position: relative;
+}
+.about-img__container::before{
+	content: '';
+	position: absolute;
+	top: -1.5rem;
+	left:-1.7rem;
+	width: 100%;
+	height: 100%;
+	outline: 0.5rem solid #7070b7;
+	z-index: -1;
+
+}
+
+.about-img__container:hover:before{
+	top: 0rem;
+	left:0rem;
+	transition: all 0.5s linear;
+}
+
+.store{
+	background: rgb(238, 238, 238);;
+}
+
+.search-box{
+	background: #7070b7;
+	color: black;
+}
+.search-box:hover{
+	color: white;
+}
+
+.single-item{
+	transition: all 0.3s linear;
+
+}
+
+.single-item:hover{
+
+	box-shadow: 0 10px 15px rgb(0,0,0);
+}
+
+.img-container{
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.store-img{
+
+	transition: all 0.3s ease-in-out;
+}
+
+.img-container:hover .store-img{
+
+	transform: scale(1.3);
+}
+
+.store-item-icon{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 0.5rem;
+	background: white;
+	border-top-left-radius: 1rem;
+	transition: all 1s ease-in-out;
+	transform: translate(100%,100%);
+
+}
+
+.img-container:hover .store-item-icon{
+	transform: translate(0,0);
+}
+.store-item-icon:hover{
+	background: #7070b7;
+	color: white;
+}
+
+.service-title{
+	letter-spacing: 0.3rem;
+}
+
+.service-body{
+	word-spacing: 1.5rem;
+}
+
+.orderCake{
+	background: rgb(238, 238, 238);
+}
+
+.footer{
+	background: black;
+}
+
+.footer-contact{
+	background: white
+}
+
+.footer-icon{
+	font-size: 1.5rem;
+	color: grey;
+	transition: all 0.4 ease-in-out;
+}
+
+.footer-icon:hover{
+	color: #7070b7;
+}
+
+/* cart styling */
+
+.cart{
+
+	position: absolute;
+	min-height: 10rem;
+	background: rgba(255,255,255,0.8);
+	top: 0;
+	right: 0;
+	width: 0;
+	transition: all 0.3 ease-in-out;
+	overflow: hidden;
+	
+
+}
+
+.show-cart{
+margin: auto;
+padding: 1rem 1rem;
+width: 20rem;
+transform: rotateY(360deg);
+ border-bottom:0.3rem solid #7070b7;
+border-left:0.3rem solid #7070b7;
+border-bottom-left-radius: 1rem; 
+
+
+}
+
+.cart-item-delete{
+
+	color: #7070b7;
+	transition: all 0.3 linear;
+	cursor: pointer;
+}
+
+.cart-item-delete:hover{
+	transform: scale(1.2);
+	color: black;
+	cursor: pointer;
+}
+
+.cart-item-price{
+	font-size: 0.7rem;
+}
+
+
